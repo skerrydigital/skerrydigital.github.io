@@ -1,141 +1,122 @@
-/* -----------------------------
-   Design variables
------------------------------- */
 
-:root {
-  --storm-grey: #2f3437;
-  --sea-white: #f7f8f7;
-  --deep-teal: #2e6f73; /* warm accent */
-  --text-main: #1f2326;
-  --text-muted: #5a646b;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  --max-width: 720px;
-}
+  <title>Skerry Digital — A fixed point in complex digital terrain</title>
 
-/* -----------------------------
-   Base styles
------------------------------- */
+  <meta name="description"
+        content="Skerry Digital is a specialist consultancy applying human factors thinking to cybersecurity, privacy, identity and AI." />
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+  <!-- Inter humanist sans-serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;500;600&display=swap"
+        rel="stylesheet" />
 
-html {
-  font-size: 16px;
-}
+  <!-- Site styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-body {
-  margin: 0;
-  background-color: var(--sea-white);
-  color: var(--text-main);
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: 1.6;
-}
+<body>
+  <main class="container">
 
-/* -----------------------------
-   Layout
------------------------------- */
+    <header class="site-header">
+      <h1>Skerry Digital</h1>
+      <p class="tagline">A fixed point in complex digital terrain</p>
+    </header>
 
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 3rem 1.25rem 4rem;
-}
+    <section class="intro">
+      <p>
+        Skerry Digital is a specialist consultancy applying <strong>human factors thinking</strong>
+        to cybersecurity, privacy, digital identity and AI.
+      </p>
 
-/* -----------------------------
-   Header
------------------------------- */
+      <p>
+        We help organisations build digital systems that people can genuinely trust —
+        <strong>secure, ethical, and designed with society in mind</strong>.
+      </p>
 
-.site-header h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-}
+      <p class="quiet-emphasis">
+        Small, sure-footed, and indispensable when conditions get hard.
+      </p>
+    </section>
 
-.tagline {
-  font-size: 1rem;
-  color: var(--text-muted);
-  margin-top: 0;
-}
+    <section class="services">
+      <h2>What We Do</h2>
 
-/* -----------------------------
-   Sections
------------------------------- */
+      <div class="service">
+        <h3>Human Factors &amp; Security</h3>
+        <p>
+          Understanding how people actually think, behave, and make decisions in digital
+          environments — and designing security that works with human behaviour, not against it.
+        </p>
+      </div>
 
-section {
-  margin-top: 3rem;
-}
+      <div class="service">
+        <h3>Privacy by Design</h3>
+        <p>
+          Embedding privacy from the ground up, not as an afterthought.
+          Clear purpose, proportionate controls, and governance that stands up to scrutiny.
+        </p>
+      </div>
 
-h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
+      <div class="service">
+        <h3>Digital Identity</h3>
+        <p>
+          Human-centred approaches to identity, authentication and trust —
+          balancing usability, security and societal impact.
+        </p>
+      </div>
 
-h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--storm-grey);
-  margin-bottom: 0.25rem;
-}
+      <div class="service">
+        <h3>Responsible AI</h3>
+        <p>
+          Ethics, governance and oversight for AI systems,
+          with a focus on positive social outcomes and long-term public trust.
+        </p>
+      </div>
 
-/* -----------------------------
-   Intro
------------------------------- */
+      <div class="service">
+        <h3>Policy &amp; Standards</h3>
+        <p>
+          Advising regulators, public sector bodies and standards organisations on the
+          human dimensions of digital risk, technology governance and trust frameworks.
+        </p>
+      </div>
+    </section>
 
-.intro p {
-  margin-bottom: 1rem;
-}
+    <section class="approach">
+      <h2>Our Approach</h2>
 
-.quiet-emphasis {
-  font-style: italic;
-  color: var(--text-muted);
-}
+      <p>
+        Digital systems do not fail only for technical reasons.
+        They fail when human behaviour, organisational culture and social context are ignored.
+      </p>
 
-/* -----------------------------
-   Services
------------------------------- */
+      <p>
+        Skerry Digital works at the intersection of <strong>people, security and trust</strong>,
+        bringing clarity, realism and principled judgement to complex digital challenges.
+        Our focus is not scale or spectacle, but sound foundations that hold under pressure.
+      </p>
+    </section>
 
-.service {
-  margin-bottom: 1.5rem;
-}
+    <footer class="site-footer">
+      <h2>Contact</h2>
 
-.service p {
-  margin-top: 0.25rem;
-}
+      <p>For enquiries, collaborations or advisory work:</p>
 
-/* -----------------------------
-   Links
------------------------------- */
+      <p class="contact">
+        <a href="mailto:skerrydigital@gmail.com">skerrydigital@gmail.com</a>
+      </p>
 
-a {
-  color: var(--deep-teal);
-  text-decoration: none;
-}
+      <p class="footnote">
+        UK‑based. Working with public sector, regulators, standards bodies and mission‑led organisations.
+      </p>
+    </footer>
 
-a:hover,
-a:focus {
-  text-decoration: underline;
-}
-
-/* -----------------------------
-   Footer
------------------------------- */
-
-.site-footer {
-  margin-top: 4rem;
-  padding-top: 2rem;
-  border-top: 1px solid #dde2e4;
-}
-
-.contact {
-  font-weight: 500;
-}
-
-.footnote {
-  margin-top: 1rem;
-  color: var(--text-muted);
-  font-size: 0.875rem;
-}
+  </main>
+</body>
+</html>
