@@ -1,0 +1,141 @@
+/* -----------------------------
+   Design variables
+------------------------------ */
+
+:root {
+  --storm-grey: #2f3437;
+  --sea-white: #f7f8f7;
+  --deep-teal: #2e6f73; /* warm accent */
+  --text-main: #1f2326;
+  --text-muted: #5a646b;
+
+  --max-width: 720px;
+}
+
+/* -----------------------------
+   Base styles
+------------------------------ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--sea-white);
+  color: var(--text-main);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+}
+
+/* -----------------------------
+   Layout
+------------------------------ */
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+/* -----------------------------
+   Header
+------------------------------ */
+
+.site-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-top: 0;
+}
+
+/* -----------------------------
+   Sections
+------------------------------ */
+
+section {
+  margin-top: 3rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--storm-grey);
+  margin-bottom: 0.25rem;
+}
+
+/* -----------------------------
+   Intro
+------------------------------ */
+
+.intro p {
+  margin-bottom: 1rem;
+}
+
+.quiet-emphasis {
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* -----------------------------
+   Services
+------------------------------ */
+
+.service {
+  margin-bottom: 1.5rem;
+}
+
+.service p {
+  margin-top: 0.25rem;
+}
+
+/* -----------------------------
+   Links
+------------------------------ */
+
+a {
+  color: var(--deep-teal);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* -----------------------------
+   Footer
+------------------------------ */
+
+.site-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #dde2e4;
+}
+
+.contact {
+  font-weight: 500;
+}
+
+.footnote {
+  margin-top: 1rem;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
